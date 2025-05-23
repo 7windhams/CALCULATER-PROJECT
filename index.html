@@ -12,10 +12,13 @@
       <input type="text" class="form-control text-end mb-3" id="display" readonly/>
       <div class="row g-2">
         <div class="col-9">
-          <div class="row g-2">                                                                                                                       .
+          <div class="row g-2"> 
+            
+        <div class="col-4"><button class="btn btn-danger w-100" onClick="clearDisplay()">C</button></div>
+        <div class="col-4"><button class="btn btn-secondary w-100" onClick="appendValue('/')">/</button></div>
+        <div class="col-4"><button class="btn btn-secondary w-100" onClick="appendValue('*')">*</button></div>
 
-        <div class="col-4" ><button class="btn btn-danger w-100" onClick="clearDisplay()">C</button></div>
-       <div class="col-4" ><button class="btn btn-secondary w-100" onClick="appendValue('/')">/</button></div>
+      
           
     
       <div class="col-4" ><button class="btn btn-dark w-100" onclick="appendValue('7')">7</button></div>
@@ -38,7 +41,6 @@
     </div>
         <div class="col-3 d-flex flex-column gap-2">
           <button class="btn btn-secondary w-100 h-100" onClick="appendValue('%')">%</button>
-          
           <button class="btn btn-secondary w-100 h-100" onClick="appendValue('-')">-</button>
           <button class="btn btn-secondary w-100 h-100" onClick="appendValue('+')">+</button>
           <button class="btn btn-primary w-150 h-50" onClick="calculate()">=</button>
